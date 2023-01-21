@@ -149,6 +149,11 @@ window.onload = function () {
         }
     });
 
-
+      
 
 }
+
+var isAlpha = function(ch){
+    return typeof ch === "string" && ch.length === 1
+           && (ch >= "a" && ch <= "z" || ch >= "A" && ch <= "Z");
+  }
