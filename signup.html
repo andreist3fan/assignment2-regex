@@ -70,7 +70,10 @@
                     <label class="lab" for="">
                         Zip Code:
                     </label>
-                    <input class="input_box" type="text" name="zip_code">
+                    <input class="input_box" type="text" name="zip_code"
+                    minlength="6"
+                    maxlength="6"
+                    pattern="^[0-9]{4}[A-Z]{2}$">
 
                 </div>
                 <div class="form-item">
@@ -91,7 +94,9 @@
                     <label class="lab" for="">Password*: </label>
                     <input class="input_box" type="password" 
                     name="password" required="required"
-                    minlength="12"/>
+                    minlength="12"
+                    pattern="^(?=.[A-Z])(?=.[a-z])(?=.[0-9])(?=.[@$!%#?&])[A-Za-z0-9@$!%#?&]*$"
+                    />
 
                 </div>
                 <div class="form-item">
@@ -99,7 +104,9 @@
 
                     <input class="input_box" type="password" 
                     name="password_confirmation" required="required"
-                    minlength="12"/>
+                    minlength="12"
+                    pattern="^(?=.[A-Z])(?=.[a-z])(?=.[0-9])(?=.[@$!%#?&])[A-Za-z0-9@$!%#?&]*$"
+                    />
 
                 </div>
                 <div>
