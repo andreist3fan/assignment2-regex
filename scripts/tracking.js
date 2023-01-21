@@ -129,16 +129,16 @@ window.onload = function () {
         /**
          * Full Name Check
          */
-        let input2 = inputs[0].value;
+        let input2 = inputs[1].value;
         let correctFullName=true;
-        for(let i=0; i<input2.length;i++)
-            if(isAlpha(input2[i]) || input2[i]==' '){
+        for(let i=0; i < input2.length; i++)
+            if(!(isAlpha(input2[i]) || input2[i]==' ')){
                 console.log(input2[i]);
                 correctFullName = false;
                 break;
             }
         if(input2.length < 3)
-        correctFullName = false;
+            correctFullName = false;
         if(!correctFullName){
             fName.style.color="red";
             fName.innerHTML="Your name should contain characters only and be of length 3.";
