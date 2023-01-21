@@ -13,32 +13,33 @@
 <body>
     <div id="signUpForm">
         <form id="realForm" action="">
-            
+
 
             <div id="form-main-div">
                 <div class="logo-pic"> <img src="images/logo.jpeg" alt="Hike logo"> </div>
                 <br>
                 <div class="form-item">
                     <label class="lab" for="">
-                         User ID*:
+                        User ID*:
                     </label>
-                    <div>
-                        <input class="input_box" type="text" name="full_name">
-                        <div id="user-id" class="input-check">test</div>
-                    </div>
+
+                    <input class="input_box" type="text"
+                     name="user_id" required="required"
+                     minlength="5" maxlength="12">
+
                 </div>
                 <div class="form-item">
                     <label class="lab" for="">
                         Full Name*:
                     </label>
-                    <div>
-                        <input class="input_box" type="text" name="full_name">
-                        <div id="full-name">test</div>
-                    </div>
+
+                    <input class="input_box" type="text" 
+                    name="full_name" required="required">
+
                 </div>
                 <div class="form-item">
                     <label class="lab" for=""> Gender* </label>
-                    <select class="selector-box" name="rental-option">
+                    <select class="selector-box" name="gender" required="required">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Other</option>
@@ -46,34 +47,28 @@
                 </div>
                 <div class="form-item">
                     <label class="lab" for="">
-                            Address:
+                        Address:
                     </label>
-                    <div>
-                    <input class="input_box" type="te   xt" name="full_name">
-                    <div>test</div>
-                    </div>
+                    <input class="input_box" type="text" name="address" >
+
                 </div>
                 <div class="form-item">
                     <label class="lab" for="">
                         Country*:
                     </label>
-                    <div>
-                    <input class="input_box" type="text" name="full_name">
-                    <div>test</div>
-                    </div>
-                </div >
+                    <input class="input_box" type="text" name="country" required="required">
+
+                </div>
                 <div class="form-item">
                     <label class="lab" for="">
-                         Zip Code: 
+                        Zip Code:
                     </label>
-                    <div>
-                    <input class="input_box" type="text" name="full_name">
-                    <div>test</div>
-                    </div>
+                    <input class="input_box" type="text" name="zip_code">
+
                 </div>
                 <div class="form-item">
                     <label class="lab" for=""> Language*: </label>
-                    <select class="selector-box" name="rental-option">
+                    <select class="selector-box" name="language" required="required">
                         <option value="english">English</option>
                         <option value="dutch">Dutch</option>
                         <option value="romanian">Romanian</option>
@@ -81,26 +76,24 @@
                 </div>
                 <div class="form-item">
                     <label class="lab" for="">
-                        Email*: 
+                        Email*:
                     </label>
-                    <div>
-                        <input class="input_box" type="email" name="Email">
-                        <div>test</div>
-                    </div>
+                    <input class="input_box" type="email" name="Email" required="required">
                 </div>
                 <div class="form-item">
                     <label class="lab" for="">Password*: </label>
-                    <div>
-                        <input class="input_box" type="password" name="password" />
-                        <div>test</div>
-                    </div>
+                    <input class="input_box" type="password" 
+                    name="password" required="required"
+                    minlength="12"/>
+
                 </div>
                 <div class="form-item">
                     <label class="lab" for="">Confirm Password*: </label>
-                    <div>
-                        <input class="input_box" type="password" name="password_confirmation" />
-                        <div>test</div>
-                    </div>
+
+                    <input class="input_box" type="password" 
+                    name="password_confirmation" required="required"
+                    minlength="12"/>
+
                 </div>
                 <div>
                     <input id="subButSignUp" type="submit" value="Submit" href="index.html" />
