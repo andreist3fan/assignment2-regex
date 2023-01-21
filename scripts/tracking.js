@@ -130,13 +130,23 @@ window.onload = function () {
          * Full Name Check
          */
         let input2 = inputs[0].value;
-
-        input2.array.forEach(element => {
-            console.log(element);
-            if(element>="A" && element<="Z" || element>="a" && element>="z" || element==' '){
-                fName.innerHTML="Your name should contain characters only.";
+        let correctFullName=true;
+        for(let i=0; i<input2.length;i++)
+            if(isAlpha(input2[i]) || input2[i]==' '){
+                console.log(input2[i]);
+                correctFullName = false;
+                break;
             }
-        });
+        if(input2.length < 3)
+        correctFullName = false;
+        if(!correctFullName){
+            fName.style.color="red";
+            fName.innerHTML="Your name should contain characters only and be of length 3.";
+        }
+        else{
+            fName.style.color="green";
+            fName.innerHTML="Correct!";
+        }
     });
 
 
